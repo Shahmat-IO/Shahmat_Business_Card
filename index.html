@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Robert Petrovai | Shahmat Analytics</title>
+  <meta name="description" content="Digital Business Card — Robert Petrovai, Founder & CEO at Shahmat Analytics. Play Smart. Analyze Smarter.">
+  <meta name="theme-color" content="#0d6e7e">
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" href="KnightOfficial.png">
+  <link rel="apple-touch-icon" href="KnightOfficial.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Robert Petrovai | Shahmat Analytics">
+  <meta property="og:description" content="Founder & CEO — Play Smart. Analyze Smarter.">
+  <meta property="og:image" content="KnightOfficial.png">
+  <meta property="og:type" content="profile">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- QR Code Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating geometric shapes -->
+  <div class="geo-bg" aria-hidden="true">
+    <div class="geo-shape shape-1"></div>
+    <div class="geo-shape shape-2"></div>
+    <div class="geo-shape shape-3"></div>
+    <div class="geo-shape shape-4"></div>
+    <div class="geo-shape shape-5"></div>
+    <div class="geo-shape shape-6"></div>
+    <div class="geo-shape shape-7"></div>
+    <div class="geo-shape shape-8"></div>
+  </div>
+
+  <!-- Main Card -->
+  <main class="card-container">
+    <div class="card">
+
+      <!-- Logo -->
+      <div class="logo-wrapper">
+        <img src="KnightOfficial.png" alt="Shahmat Analytics — Chess Knight Logo" class="logo" width="110" height="110">
+      </div>
+
+      <!-- Company -->
+      <div class="company-name">SHAHMAT</div>
+      <div class="company-sub">ANALYTICS</div>
+
+      <!-- Divider -->
+      <div class="divider"></div>
+
+      <!-- Person -->
+      <h1 class="name">Robert Petrovai</h1>
+      <p class="title">Founder &amp; CEO</p>
+      <p class="tagline">Play Smart. Analyze Smarter</p>
+
+      <!-- Contact -->
+      <div class="contact-list">
+
+        <a href="mailto:robert@shahmat.io" class="contact-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="4" width="20" height="16" rx="2"/>
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+          </svg>
+          <span>robert@shahmat.io</span>
+        </a>
+
+        <a href="tel:+447760956961" class="contact-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          <span>+44 776 0956 961</span>
+        </a>
+
+        <a href="https://shahmat.io" target="_blank" rel="noopener noreferrer" class="contact-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M2 12h20"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+          <span>shahmat.io</span>
+        </a>
+
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="actions">
+        <button id="saveContact" class="btn btn-primary" aria-label="Save contact to phone">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <line x1="19" y1="8" x2="19" y2="14"/>
+            <line x1="22" y1="11" x2="16" y2="11"/>
+          </svg>
+          Save Contact
+        </button>
+        <button id="shareCard" class="btn btn-outline" aria-label="Share this card">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="18" cy="5" r="3"/>
+            <circle cx="6" cy="12" r="3"/>
+            <circle cx="18" cy="19" r="3"/>
+            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
+            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+          </svg>
+          Share
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <p class="footer">Shahmat Analytics Ltd &middot; England &amp; Wales &middot; Co. 16895598</p>
+  </main>
+
+  <!-- QR Overlay -->
+  <div id="qrOverlay" class="qr-overlay hidden" role="dialog" aria-label="Share card">
+    <div class="qr-content">
+      <div class="qr-box">
+        <div id="qrCode"></div>
+      </div>
+      <p class="qr-label">Scan to view my card</p>
+      <div class="qr-actions">
+        <button id="copyLink" class="btn-qr btn-copy">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+          </svg>
+          Copy Link
+        </button>
+        <button id="nativeShareBtn" class="btn-qr btn-native-share">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/>
+            <polyline points="16 6 12 2 8 6"/>
+            <line x1="12" y1="2" x2="12" y2="15"/>
+          </svg>
+          Share via...
+        </button>
+      </div>
+      <button id="closeQr" class="btn-close-qr">Close</button>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div id="toast" class="toast" aria-live="polite"></div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>

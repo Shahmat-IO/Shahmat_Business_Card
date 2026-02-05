@@ -1,0 +1,24 @@
+{
+  "name": "Robert Petrovai | Shahmat Analytics",
+  "short_name": "Shahmat Card",
+  "description": "Digital Business Card - Robert Petrovai, Founder & CEO at Shahmat Analytics",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0a1a1f",
+  "theme_color": "#0d6e7e",
+  "icons": [
+    {
+      "src": "KnightOfficial.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "KnightOfficial.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
